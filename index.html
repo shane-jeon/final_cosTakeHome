@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel='stylesheet' id='splide-style-css'  href='//cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css?ver=5.9.3' media='all' />
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.2.3/dist/js/splide-extension-url-hash.min.js"></script>
+      
+      <h1 class="text-secondary">SplideJS</h1>
+      <p>Insert ad every nth image clicked.</p>
+      <section id="main-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- below are child nodes, the first being the firstChild -->
+              <li class="splide__slide" data-splide-hash="rage-against-the-machine"><img src="https://s1.ticketm.net/dam/a/139/c8020758-7aaf-40e9-b3ab-2dad77f61139_1286271_RETINA_PORTRAIT_16_9.jpg" alt="Rage Against the Machine"></li>
+              <!-- example, nextSibling -->
+              <li class="splide__slide" data-splide-hash="harry-styles" id="harry-styles"><img src="https://consequence.net/wp-content/uploads/2022/05/Harry-Styles-2022.jpeg?quality=80" alt="Harry Styles"></li>
+              <li class="splide__slide" data-splide-hash="kid-cudi" id="kid-cudi"><img src="https://s1.ticketm.net/dam/a/5eb/9d6670df-9dd6-4463-90a1-ca27d074f5eb_1722401_RETINA_PORTRAIT_16_9.jpg" alt="Kid Cudi"></li>
+              <li class="splide__slide" data-splide-hash="demi-lovato" id="demi-lovato"><img src="https://s1.ticketm.net/dam/a/63b/af7004ce-1b0c-4523-8e27-975ccbbb863b_1707461_RETINA_PORTRAIT_16_9.jpg" alt="Demi Lovato"></li>
+              <li class="splide__slide" data-splide-hash="the-mars-volta" id="the-mars-volta"><img src="https://s1.ticketm.net/dam/a/158/c4163788-def4-40a4-af51-df3bc0eaf158_1719771_RETINA_PORTRAIT_16_9.jpg" alt="The Mars Volta"></li>
+              <li class="splide__slide" data-splide-hash="post-malone" id="post-malone"><img src="https://s1.ticketm.net/dam/a/40c/c3796189-4b81-425d-ab1b-f2b34c38f40c_1714331_RETINA_PORTRAIT_16_9.jpg" alt="Post Malone"></li>
+              <li class="splide__slide" data-splide-hash="kendrick-lamar" id="kendrick-lamar"><img src="https://s1.ticketm.net/dam/a/9f3/9b28e63a-467b-4bcc-b86e-0990372789f3_1695141_RETINA_PORTRAIT_16_9.jpg" alt="Kendrick Lamar"></li>
+              <li class="splide__slide" data-splide-hash="carly-rae-jespen" id="carly-rae-jespen"><img src="https://s1.ticketm.net/dam/a/3c8/535b4cbd-e6c0-4735-adbc-29390b4073c8_1706671_RETINA_PORTRAIT_16_9.jpg" alt="Carly Rae Jepsen"></li>
+              <li class="splide__slide" data-splide-hash="gorillaz" id="gorillaz"><img src="https://s1.ticketm.net/dam/a/4b5/1120696d-e3d3-41df-bf8c-f8236b1484b5_1690811_RETINA_PORTRAIT_16_9.jpg" alt="Gorillaz"></li>
+              <!-- lastChild node -->
+              <li class="splide__slide" data-splide-hash="panic-at-the-disco" id="panic-at-the-disco"><img src="https://s1.ticketm.net/dam/a/1ba/96c9fddd-645d-4d41-83b0-962f7308b1ba_1705011_RETINA_PORTRAIT_16_9.jpg" alt="Panic! At The Disco"></li>
+              <!-- <li class="splide__slide" data-splide-hash="googleAd">
+                <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-1234567890123456" Data-ad-slot="1234567890"></ins>
+                <script> (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <div class="ad">Advertisement</div>
+                </li> -->
+            </ul>
+          </div>
+        </section>
+        
+        <style type="text/css">
+          .splide__list h3 {
+            padding: 10px 0;
+            line-height: 26px;
+            font-size: 22px;
+            font-weight: 700;
+          } 
+          .splide__list h3 a {
+            font-weight: bold;
+            color:  #242477;
+          }
+          .splide__list h3 a:hover {
+            color: #fc5f00;
+          }
+          .splide__list .description {
+            padding: 0 0 10px 0;
+          } 
+          .splide {
+            margin: auto;
+          }
+          @media (min-width: 1200px) {
+            .splide {
+              width: 70%;
+            }
+          }
+          @media (max-width: 1200px) {
+            .splide {
+              width: 100%;
+            }
+          }
+          .splide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .splide__slide {
+            opacity: 0.6;
+          }
+          .splide__slide.is-active {
+            opacity: 1;
+          }
+          /* .splide__slide .data {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            opacity: 0.6;
+            padding: 0 10px;
+          } */
+          /* .hide{
+            display:none;
+          } */
+        </style>
+        <script src="/static/js/JSscript_cleanUp2.js"></script>
+        </div>
+      </div> 
+    </div>
+
+    <script defer src='//cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js' id='splide-js-js'></script>
+    <script defer src='//cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.2.3/dist/js/splide-extension-url-hash.min.js' id='splide-url-hash-js-js'></script>
+  </body>
+</html>
