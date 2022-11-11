@@ -42,20 +42,17 @@ liSlide.appendChild(scriptElm);
 liSlide.appendChild(insElm);
 
 // liSlide.appendChild(secScriptElm);
-console.log('liSlide after appendChild', liSlide);
+// console.log('liSlide after appendChild', liSlide);
 
 // append newly created and updated li element to docFrag
 docFrag.appendChild(liSlide);
-console.log('docFrag',docFrag);
+// console.log('docFrag',docFrag);
 
 // GETTING A LIST OF ELEMENTS
 
 // selects all nodes with class "splide__slide"
 var liSlides = document.querySelectorAll('li');
-console.log('splide__slides',liSlides)
-
-// getting length of list
-console.log("length", liSlides.length)
+// console.log('splide__slides',liSlides)
 
 // creating array to hold index nums of liSlides
 slide_indices = [];
@@ -64,11 +61,6 @@ slide_indices = [];
 for (let i = 0; i < liSlides.length ; i++) {
   slide_indices.push(i);
 }
-
-// did it work?
-console.log('slide_indices array: ', slide_indices);
-
-
 
 // Once DOM content is loaded, execute the following function:
   // instantiate new splide instance, accepting ID selector
@@ -105,12 +97,10 @@ window.addEventListener('hashchange', () => {
 
 if (counter % 4 === 0) {
   main.add(liSlide, trackIndex);
-  console.log('did main.add work?', liSlide, trackIndex)
+  // console.log('did main.add work?', liSlide, trackIndex)
 
   // main.on('moved', function() {
   //   var theIndex = main.Components.Controller.getIndex(true) + 1;
-  //   console.log('theIndex', theIndex)
-  //   console.log('did main.remove work?')
   //   main.remove(liSlide, theIndex)
   //   // main.remove(liSlide)
   // })
@@ -126,27 +116,4 @@ if (counter % 5 === 0) {
   })
 } 
 })
-
-
-
-
-// main.on('moved', function() {
-//   var theIndex = main.Components.Controller.getIndex(true) + 1;
-//   console.log('theIndex', theIndex)
-//   console.log('did main.remove work?')
-//   main.remove(liSlide)
-// })
-
-// else if (counter % 5 === 0) {
-  // main.on('moved', function() {
-  //   var theIndex = main.Components.Controller.getIndex(true) + 1;
-  //   console.log('theIndex', theIndex)
-  //   console.log('did main.remove work?')
-  //   main.remove(liSlide)
-  // }
-  //   )};
-  // });
-    // counter += 1
-
-  // });
 })
